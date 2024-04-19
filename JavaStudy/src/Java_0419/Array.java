@@ -1,7 +1,18 @@
 package Java_0419;
-import  java.util.Arrays; 
+import  java.util.Arrays;
+
+import javax.print.attribute.IntegerSyntax; 
 
 public class Array {
+	//가변적 매개변수
+	public static int addNumber(int... nums) { //배열의 개수를 정하지 않고, 그거에 상관없이 어떤 값이든 + 하게 만들어 줌, 그리고 스프레드는 매개변수 중에서 항상 맨 뒤에 잇어야한다.
+		int total = 0;
+		for(int num : nums) {
+			total += num;
+			
+		}
+		return total;
+	}
 
 	public static void main(String[] args) {
 		//자바의 배열은 정적 할당 : 숫자가 먼저 정해져야한다는 의미 
@@ -40,6 +51,11 @@ public class Array {
 				System.out.print(matrix[i][j]+ " ");
 			}
 		}
+		
+		
+		//가변적 매개변수 
+		int sum = addNumber(3,4,52,8,4,5,1,4);
+		System.out.println("가변적 매개변수: "+ sum);
 	}
 
 }
