@@ -1,5 +1,7 @@
 package Java_0422;
 
+import java.util.ArrayList;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -48,12 +50,22 @@ public class Main {
 //		car.start();
 
 		// 추상클래스 실습 1
-		Student_Abstract kim = new Kim("김철수", 20220001, "ABC고등학교", 17);
-		Student_Abstract baek = new Baek("백영희", 20220002, "msk고등학교", 18);
+//		Student_Abstract kim = new Kim("김철수", 20220001, "ABC고등학교", 17);
+//		Student_Abstract baek = new Baek("백영희", 20220002, "msk고등학교", 18);
+//
+//		kim.print();
+//		baek.print();
 
-		kim.print();
-		baek.print();
+		// 추상클래스 실습2
+		ArrayList<Shape> shapes = new ArrayList<>();
+		shapes.add(new Circle("Red", "circle", 2.5));
+		shapes.add(new Rectangle("Blue", "rectangle", 3, 12));
 
+		for (Shape shape : shapes) {
+			System.out.println("=====" + shape.getType() + " 도형의 정보 =====");
+			System.out.printf("도형의 색상 : %s\n", shape.getColor());
+			System.out.printf("도형의 넓이 : %.3f\n ", shape.calculateArea());
+		}
 	}
 
 }
