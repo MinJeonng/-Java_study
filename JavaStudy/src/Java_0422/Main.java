@@ -62,7 +62,7 @@ public class Main {
 		shapes.add(new Rectangle("Blue", "rectangle", 3, 12));
 
 		for (Shape shape : shapes) {
-			System.out.println("=====" + shape.getType() + " 도형의 정보 =====");
+			System.out.println("=====" + shape.getType() + " 도형의 정보입니다. =====");
 			System.out.printf("도형의 색상 : %s\n", shape.getColor());
 			System.out.printf("도형의 넓이 : %.3f\n ", shape.calculateArea());
 		}
