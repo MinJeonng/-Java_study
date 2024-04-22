@@ -6,6 +6,7 @@ public abstract class Shape {
 
 	public Shape(String color, String type) {
 		this.color = color;
+		// type은 set,get 사용
 		this.setType(type);
 	}
 
