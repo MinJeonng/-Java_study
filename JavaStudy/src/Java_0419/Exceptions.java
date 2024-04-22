@@ -12,7 +12,6 @@ public class Exceptions {
 			int num2 = 0;
 			System.out.printf("num1/num2 = %d", num1 / num2);
 		} catch (Exception e) {
-			// TODO: handle exception
 			System.out.println("0으로 나누어서 예외발생 ");
 
 		}
@@ -21,7 +20,7 @@ public class Exceptions {
 		int[] intArray = { 1, 2, 3, 4, 5 };
 //		for(int i = 0; i < 6; i++) { //오류발생 
 //			System.out.println(intArray[i]);
-//		}
+//		
 		try {
 			for (int i = 0; i < 6; i++) { // 오류발생
 				System.out.println(intArray[i]);
@@ -33,12 +32,11 @@ public class Exceptions {
 
 		// 입력오류 발생시
 		Scanner scan = new Scanner(System.in);
-		System.out.println("정수를 입력하세요 ");
+		System.out.println("배열의 크기를 입력해주세요 ");
 		try {
 			int num = scan.nextInt();
 			System.out.println("입력된 정수는 : " + num);
 		} catch (InputMismatchException e) {
-			// TODO: handle exception
 			System.out.println("입력오류 ");
 
 		}
