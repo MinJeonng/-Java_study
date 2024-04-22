@@ -35,13 +35,17 @@ public class Main {
 //		dog.eatFood();
 
 		// 상속 두번째 실습
-		ExpressBus bus = new ExpressBus("고속버스", 120, 50, true);
-		Truck truck = new Truck("트럭", 90, 5, 1500);
-		Car car = new Car("x2", 220, 5, "blue");
+//		ExpressBus bus = new ExpressBus("고속버스", 120, 50, true);
+//		Truck truck = new Truck("트럭", 90, 5, 1500);
+//		Car car = new Car("x2", 220, 5, "blue");
+//
+//		bus.displayInfo();
+//		truck.displayInfo();
+//		car.displayInfo();
 
-		bus.displayInfo();
-		truck.displayInfo();
-		car.displayInfo();
+		// 추상클래스 실습
+		Motorcyle_Abstract car = new Motorcyle_Abstract("부가티");
+		car.start();
 
 	}
 
