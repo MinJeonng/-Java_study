@@ -44,8 +44,15 @@ public class Main {
 //		car.displayInfo();
 
 		// 추상클래스 실습
-		Motorcyle_Abstract car = new Motorcyle_Abstract("부가티");
-		car.start();
+//		Motorcyle_Abstract car = new Motorcyle_Abstract("부가티");
+//		car.start();
+
+		// 추상클래스 실습 1
+		Student_Abstract kim = new Kim("김철수", 20220001, "ABC고등학교", 17);
+		Student_Abstract baek = new Baek("백영희", 20220002, "msk고등학교", 18);
+
+		kim.print();
+		baek.print();
 
 	}
 
