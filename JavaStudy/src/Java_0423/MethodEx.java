@@ -5,6 +5,8 @@ import java.util.ArrayList;
 //extends : ~을 상속하는
 //super : ~이 상속하는 
 
+//리더님이 준 GenericMethod 파일 다시확인 
+
 public class MethodEx {
 
 	// 타입 파라미터를 사용하는 메소드 : 데이터타입을 매개변수처럼 다루게 해준다
@@ -31,6 +33,7 @@ public class MethodEx {
 	}
 
 	// super 키워드 : 쓰기 전용으로 주로 사용
+	// super라는 키워드를 쓰기 위해선 ? 가 붙어야 함
 	public <T> void addList(ArrayList<? super T> list, T value) {
 		// T 타입 또는 T 타입의 슈퍼타입을 포함하는 객체를 나타내는 데 사용.
 		// 즉, 이 메소드는 T 타입의 객체 또는 T 타입의 슈퍼클래스 객체들을 포함할 수 있는 리스트를 매개변수로 받을 수 있다는 것을 의미
