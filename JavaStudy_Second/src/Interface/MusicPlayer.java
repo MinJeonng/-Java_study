@@ -2,6 +2,7 @@ package Interface;
 
 public class MusicPlayer {
 
+	// 리더님꺼 보고 다형성 이용하는 방법도 다시 확인하기
 	public static void main(String[] args) {
 		Music cd = new CdPlayer();
 		Music mp3 = new Mp3Player();
