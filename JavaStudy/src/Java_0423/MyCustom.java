@@ -12,3 +12,4 @@ public class MyCustom<T> {
 	}
 
 }
+//public class MyCuston<T extends Number> -> 이렇게 시작되면 넘버만(이게 정수만있다기 보다 오른쪽 클릭 -> type hiercy? 거기 누르면 뭐뭐 있는지 확인가능) 들어올 수 있다고 제한
