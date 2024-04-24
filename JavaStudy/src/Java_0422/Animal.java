@@ -12,7 +12,7 @@ public class Animal {
 	}
 
 	public String makeSound() {
-		return "동물은 소리를 낸다!";
+		return "동물이 소리를 내요";
 	}
 
 	public String getName() {
